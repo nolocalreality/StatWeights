@@ -1,0 +1,35 @@
+Identifier = "StatWeights"
+Name = "StatWeights"
+Description = "Calculates stat weights for gear, rates planar fragments, and recycles planar fragments"
+Author = "Nolocalreality"
+Version = "1.0"
+Email = "hi@you"
+
+Environment = "4.3"
+
+RunOnStartup = {
+  "Utilities.lua",
+  "Main.lua",
+  "Tooltip.lua",
+  "Roles.lua",
+  "Fragments.lua",
+  "Weights.lua",
+  "Button.lua",
+  
+}
+
+Embed = {
+	LibExtendedWidgets = true,
+    LibString = true,
+}
+
+Dependencies = {
+	LibExtendedWidgets = {"required", "before"},
+    LibString = {"required", "before"},
+}
+
+SavedVariables = {
+	SW_Settings = "character",
+    SW_SavedWeights = "character",
+    SW_Rules = "account"
+}
